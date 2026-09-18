@@ -1,0 +1,10 @@
+{
+  "name": "web-arithmetic-calculator",
+  "version": "2.0.0",
+  "description": "Exact-arithmetic web calculator with step-by-step evaluation and recurring-decimal detection.",
+  "private": true,
+  "scripts": {
+    "test": "node tests/engine.test.js"
+  },
+  "license": "MIT"
+}
