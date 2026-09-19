@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Exact Calculator — styles
+   Design tokens first; light theme by default, dark via system or toggle.
+   ========================================================================== */
+
+:root {
+  --bg: #f3f3ef;
+  --surface: #ffffff;
+  --surface-2: #f7f7f4;
+  --border: #e3e3dc;
+  --border-strong: #d2d2c9;
+  --text: #17191e;
+  --text-2: #4b505a;
+  --muted: #80858f;
+
+  --key: #f4f4f0;
+  --key-hover: #ebebe5;
+  --key-fn: #e9eaf0;
+  --key-fn-hover: #dfe1ea;
+  --key-op: #e3e9fd;
+  --key-op-text: #2446c7;
+  --key-op-hover: #d6dffb;
+
+  --accent: #2446c7;
+  --accent-hover: #1d3aa8;
+  --accent-text: #ffffff;
+  --accent-soft: rgba(36, 70, 199, 0.1);
+  --mark: rgba(36, 70, 199, 0.13);
+
+  --error: #c2362b;
+  --warn: #9a6400;
+
+  --brand-ink: #ffffff;
+  --shadow: 0 1px 2px rgba(20, 22, 30, 0.04), 0 8px 28px rgba(20, 22, 30, 0.06);
+  --radius: 18px;
+  --radius-sm: 10px;
+
+  --font-ui: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-num: 'JetBrains Mono', ui-monospace, 'SF Mono', Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d0f13;
+    --surface: #15181e;
+    --surface-2: #1a1e25;
+    --border: #252a33;
+    --border-strong: #323843;
+    --text: #e8eaef;
+    --text-2: #b3b8c2;
+    --muted: #7b818d;
+    --key: #1e232b;
+    --key-hover: #262c36;
+    --key-fn: #232834;
+    --key-fn-hover: #2b3140;
+    --key-op: #1f2945;
+    --key-op-text: #9db2ff;
+    --key-op-hover: #273355;
+    --accent: #5b7cff;
+    --accent-hover: #6f8cff;
+    --accent-text: #0b0d12;
+    --accent-soft: rgba(91, 124, 255, 0.14);
+    --mark: rgba(91, 124, 255, 0.22);
+    --error: #ff7b6e;
+    --warn: #e0b04a;
+    --brand-ink: #0b0d12;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0d0f13;
+  --surface: #15181e;
+  --surface-2: #1a1e25;
+  --border: #252a33;
+  --border-strong: #323843;
+  --text: #e8eaef;
+  --text-2: #b3b8c2;
+  --muted: #7b818d;
+  --key: #1e232b;
+  --key-hover: #262c36;
+  --key-fn: #232834;
+  --key-fn-hover: #2b3140;
+  --key-op: #1f2945;
+  --key-op-text: #9db2ff;
+  --key-op-hover: #273355;
+  --accent: #5b7cff;
+  --accent-hover: #6f8cff;
+  --accent-text: #0b0d12;
+  --accent-soft: rgba(91, 124, 255, 0.14);
+  --mark: rgba(91, 124, 255, 0.22);
+  --error: #ff7b6e;
+  --warn: #e0b04a;
+  --brand-ink: #0b0d12;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
