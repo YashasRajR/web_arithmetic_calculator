@@ -319,3 +319,39 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .view[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
 .view:disabled { opacity: .35; }
 
+/* ---------------------------------------------------------------- keypad */
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.key {
+  height: 58px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--key);
+  color: var(--text);
+  font-family: var(--font-num);
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color .12s, transform .08s;
+}
+.key:hover { background: var(--key-hover); }
+.key:active, .key.pressed { transform: scale(.96); }
+.key svg { width: 22px; height: 22px; }
+.key sup { font-size: .6em; }
+
+.key-fn { background: var(--key-fn); font-family: var(--font-ui); font-size: 16px; font-weight: 500; color: var(--text-2); }
+.key-fn:hover { background: var(--key-fn-hover); }
+
+.key-op { background: var(--key-op); color: var(--key-op-text); font-size: 23px; }
+.key-op:hover { background: var(--key-op-hover); }
+
+.key-eq { background: var(--accent); color: var(--accent-text); font-size: 24px; }
+.key-eq:hover { background: var(--accent-hover); }
+
