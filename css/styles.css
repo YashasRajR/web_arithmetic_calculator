@@ -530,3 +530,20 @@ kbd {
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+/* ------------------------------------------------------------- animation */
+
+@keyframes pop { 0% { transform: scale(.97); opacity: .6; } 100% { transform: none; opacity: 1; } }
+@keyframes shake {
+  0%, 100% { transform: none; }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+.result.pop { animation: pop .18s ease-out; transform-origin: right center; }
+.display.shake { animation: shake .3s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
