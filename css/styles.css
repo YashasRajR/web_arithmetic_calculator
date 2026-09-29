@@ -547,3 +547,23 @@ kbd {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
+/* ------------------------------------------------------------ responsive */
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; max-width: 520px; }
+  .pane { min-height: 0; max-height: none; }
+}
+
+@media (max-width: 480px) {
+  .topbar { padding: 16px 16px 4px; }
+  .layout { padding: 12px 16px 16px; gap: 14px; }
+  .calc { padding: 10px; }
+  .keypad { gap: 6px; }
+  .key { height: 54px; font-size: 19px; }
+  .key-fn { font-size: 15px; }
+  .pane { padding: 14px 16px; }
+  .facts { grid-template-columns: 1fr; }
+  .facts div { border-right: 0; border-bottom: 1px solid var(--border); }
+  .facts div:last-child { border-bottom: 0; }
+  .step { grid-template-columns: 54px 1fr; gap: 8px; }
+}
